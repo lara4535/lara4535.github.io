@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS_life_in_UMD</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3377BD;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  background: #DFEBF7;
+  height:1900px; /* only for demonstration, should be removed */
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+article {
+  float: left;
+  padding: 40px;
+  width: 85%;
+  background-image:url("b1.jpg");
+  background-attachment: fixed;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 30px;
+  text-align: left;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<img width=20% height=20% src="logo1.png"/>
+<header>
+  <h2>Life in UMD</h2>
+</header>
+
+<section>
+  <nav>
+    <ul style="list-style-type:square";>
+      <li>美国文化感受</li>
+      <li>”傲娇“中国胃</li>
+      <li>松鼠乱入中</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style="color:#DDEAF2">美国文化感受</h1>
+    <p style="background-color:rgba(223, 235, 247, 0.5);color:black">来到美国一周有余，刚下飞机踏上美利坚土地的新鲜感逐渐褪去，对生活的感知也更加真实和直接，一边感受着文化差异一边辛苦觅食满足中国胃倒也是别有趣味。</p>
+    <p style="background-color:rgba(223, 235, 247, 0.5);color:black">美国最出人意料的不是华盛顿众多博物馆的琳琅满目也不是摸不着头脑的小费文化，而是普通民众生活理念中环保意识的缺乏：在居住的学生公寓里，一天到晚从不关灯，中央空调的温度逼着人穿起长袖；在每个公共洗手间里，都准备了大量纸巾供人擦手使用；在超市购物的时候，都被提供远远超过所需数量的塑料袋且无需付费；因为美观原因开发商不允许室外晾衣使得烘干机成为家家户户的必需。难以想象中国限塑令已颁布十一年后美国还在如此泛滥地使用塑料袋，也难以想象全球变暖等环境问题已成为全球议题的同时美国政府仍旧无所作为。究其原因，丰富的资源和低廉的价格养成了美国民众无所顾忌的消费习惯，而在政府层面退出巴黎协定也表明着美国在平衡国家利益和全球议题的政治态度。</p>
+	<h1 style="color:#DDEAF2">“傲娇”中国胃</h1>
+    <p style="background-color:rgba(223, 235, 247, 0.5);color:black">另一大感受就是拿什么拯救傲娇的中国胃。大口吃肉虽然过瘾，但也架不住长时间的硬货轰炸；新鲜的沙拉虽然健康，但扛不住顿顿冰冷没有温度，于是每晚辗转反侧无不在思念着祖国母亲。相比于美国，中国饮食较为精细也更注重均衡营养和荤素搭配，也较少摄入高热量食物，这都使得中国人在适应美国食物上存在一定难度，也能理解为什么大多留学党在繁重的学业压力下还坚持自己动手丰衣足食了。</p>
+    <center><img width=30% height=30% src="l0.jpg"/></center>
+	<center><p style="color:#F1F5F9"><b>中国胃在朋友圈中的挣扎</b></p></center>
+    <center><img width=30% height=30% align="middle" src="l1.jpg"/></center>
+    <center><p style="color:#F1F5F9"><b>中国胃的自我救赎</b></p></center>
+	<p style="background-color:rgba(223, 235, 247, 0.5);color:black">短短的一周体验到的也只是美国文化的皮毛，有相同也有差异，有好也有坏，一些经历可能不久就会忘记，但我会永远记得从华盛顿回公寓的Uber上司机因为我们说落日漂亮而把车停在路边摇下车窗让我们拍照的那一幕。</p>
+	<center><img width=30% height=30% src="l2.jpg"/></center>
+    <center><p style="color:#F1F5F9"><b>落日</b></p></center>
+	<h1 style="color:#DDEAF2">松鼠乱入中...</h1>	
+	<center><img width=70% src="s0.png"/></center>
+	<center><p style="color:#F1F5F9"><b>三只松鼠</b></p></center>
+  </article>
+</section>
+
+<footer>
+	<div class="footer">
+	<div class="pic"><img style="margin-left:10px" src="f1.png" width="431px" height="126px"></div>
+	</div>
+
+</footer>
+
+</body>
+</html>
+
+
+
+

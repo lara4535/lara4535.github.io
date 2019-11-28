@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS_life_in_UMD</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #E21833;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 30%;
+  background: #1A2933;
+  height:1490px; /* only for demonstration, should be removed */
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+article {
+  float: left;
+  padding: 40px;
+  width: 70%;
+  background-image:url("s2.jpg");
+  background-attachment: fixed;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 30px;
+  text-align: left;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<img width=20% height=20% src="logo1.png"/>
+<header>
+  <h2>Lessons in UMD</h2>
+</header>
+
+<section>
+  <nav>
+    <ul style="list-style-type:square";>
+      <li style="color:#FFD520"><b>One week lesson review</b></li>
+      <li style="color:#FFD520"><b>Mobile GIS vs c++/Matlab</b></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style="color:#DDEAF2">One week lesson review</h1>
+    <center><img width=90% height=40% src="mg.png"/></center>
+	<center><p style="color:#F1F5F9"><b>第一周课程提纲</b></p></center>
+    <h1 style="color:#DDEAF2">Mobile GIS vs C++/Matlab</h1>
+	<p style="background-color:rgba(26, 41, 51, 0.5);color:white">如果在国内学习相同系列的东西会是什么样子的。回想之前学习c++和matlab时候的学习方式，一年前c++是从什么是面向过程开始讲基础语法讲指针讲类，当时每课一定有的问题是这玩意是不是系统默认的变量名、可不可以随便命名。最后的考试，由于练习题库较小，导致完全可以通过刷题来获得高分。也就是说不能完全通过考试成绩反映能力。</p>
+    <p style="background-color:rgba(26, 41, 51, 0.5);color:white">这学期matlab通过复制练习老师给的例子写文档加上作业题的形式，在一次又一次写文档中有些收获记住了很多东西，但调一些外观的设置还需要类似查字典来进行。</p>
+	<p style="background-color:rgba(26, 41, 51, 0.5);color:white">说起来，matlab的方式和美国这门课的方式有些类似。都是老师会举一些教学文档里面的例子，自不过Damian不会通过反复的练习例子和写文档来帮助记忆。另外，前端涉及的东西有点多，信息量太大。</p>
+	<p style="background-color:rgba(26, 41, 51, 0.5);color:white">不知道是不是所有美国老师讲课都大部分念ppt，不知道是不是真正上课的时候会不会也在一次课中有这么多内容，这样学起来真的很累。课后需要太多太多的时间来自学和实际操作。</p>
+	<p style="background-color:rgba(26, 41, 51, 0.5);color:white">这样的方式如果放到国内，老师应该不会被评为受欢迎的老师，可能很多人连滚带爬也跟不上，一如往日c++惨状。</p>
+    <center><img width=70% height=40% src="s3.png"/></center>
+    <center><p style="color:#F1F5F9"><b>中外课程对比</b></p></center>
+  </article>
+</section>
+
+<footer>
+	<div class="footer">
+	<div class="pic"><img style="margin-left:10px" src="f1.png" width="431px" height="126px"></div>
+	</div>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
